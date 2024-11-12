@@ -12,6 +12,6 @@
     "types": ["node"],
     "allowJs": true
   },
-  "include": ["controller/**/*", "db.ts", "app.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
