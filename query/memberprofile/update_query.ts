@@ -2,5 +2,5 @@
 export const memberprofilePasswordUpdateQuery = `
   UPDATE MemberProfile 
   SET member_name = ?, member_email = ?, member_password = ?
-  WHERE id = ?;
+  WHERE id = ? AND member_id = ?;
 `;
