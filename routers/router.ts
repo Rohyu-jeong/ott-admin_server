@@ -8,7 +8,6 @@ import { memberprofileGets } from "../controller/memberprofile/memberprofileAllG
 import { memberAllGets } from "../controller/member/memberAllGets";
 import {
   movieInfoAdd,
-  uploadMiddleware,
 } from "../controller/movie/movieInfoAdd";
 import { memberDelete } from "../controller/member/memberDelete";
 import { memberprofileDelete } from "../controller/memberprofile/memberprofileDelete";
@@ -46,7 +45,7 @@ router.delete(`${api}/memberprofile/:id`, memberprofileDelete);
 router.get(`${api}/movie`, movieInfoAllGets);
 
 // 영화 추가하기
-router.post(`${api}/movie/add`, uploadMiddleware, movieInfoAdd);
+router.post(`${api}/movie/add`, movieInfoAdd);
 
 // 영화 정보 업데이트
 router.post(`${api}/movie`, movieInfoUpdate);
