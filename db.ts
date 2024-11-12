@@ -22,5 +22,3 @@ pool.getConnection()
   .catch(err => {
     console.error('Database connection failed:', err);
   });
-
-  export default pool;
