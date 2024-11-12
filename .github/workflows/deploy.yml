@@ -39,4 +39,4 @@ jobs:
         with:
           app-name: "ott-admin-server" # Azure App Service 이름
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: "./dist"
+          package: "." # 전체 프로젝트를 배포
